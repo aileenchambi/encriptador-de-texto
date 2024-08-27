@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR DE TEXTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <img src="./assets/logo.svg" alt="Logo de alura">
+        <h1 class="encabezado__titulo">Encriptador de Texto</h1>
+    </header>
+    <main class="principal">
+        <section class="entrada">
+            <textarea class="entrada__texto" cols="30" rows="10"placeholder="Ingrese el texto aquí"></textarea>
+            <div class="entrada__validacion">
+                <img class="validacion__icono" src="./assets/icon-alerta.svg" alt="icono de alerta">
+                <p class="validacion__mensaje">Solo letras minúsculas, sin acentos ni carateres especiales</p>
+            </div>
+            <div class="entrada__botones">
+                <button class="boton" id="encriptar">Encriptar</button>
+                <button class="boton" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="salida__mensaje">
+                <img class="mensaje__imagen" src="./assets/lupa.svg" alt="imagen de una lupa">
+                <span class="mensaje__span">Ningún mensaje fue encontrado</span>
+                <p class="mensaje__instruccion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="salida__resultado">
+                <textarea class="resultado__texto" cols="30" rows="10"></textarea>
+                <div class="resultado__botones">
+                    <button class="boton" id="copiar">Copiar</button>
+                    <button class="boton" id="limpiar">Limpiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Desarrollado por Aileen Chambi</footer>
+    <script src="app.js"></script>
+</body>
+</html>
